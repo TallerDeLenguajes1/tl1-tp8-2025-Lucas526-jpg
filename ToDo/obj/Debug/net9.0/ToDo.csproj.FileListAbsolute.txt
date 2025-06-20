@@ -1,0 +1,15 @@
+C:\Users\Frx432\Desktop\Facultad\Taller de lenguajes 1\Semana 8 Colecciones y arreglos\tl1-tp8-2025-Lucas526-jpg\ToDo\bin\Debug\net9.0\ToDo.exe
+C:\Users\Frx432\Desktop\Facultad\Taller de lenguajes 1\Semana 8 Colecciones y arreglos\tl1-tp8-2025-Lucas526-jpg\ToDo\bin\Debug\net9.0\ToDo.deps.json
+C:\Users\Frx432\Desktop\Facultad\Taller de lenguajes 1\Semana 8 Colecciones y arreglos\tl1-tp8-2025-Lucas526-jpg\ToDo\bin\Debug\net9.0\ToDo.runtimeconfig.json
+C:\Users\Frx432\Desktop\Facultad\Taller de lenguajes 1\Semana 8 Colecciones y arreglos\tl1-tp8-2025-Lucas526-jpg\ToDo\bin\Debug\net9.0\ToDo.dll
+C:\Users\Frx432\Desktop\Facultad\Taller de lenguajes 1\Semana 8 Colecciones y arreglos\tl1-tp8-2025-Lucas526-jpg\ToDo\bin\Debug\net9.0\ToDo.pdb
+C:\Users\Frx432\Desktop\Facultad\Taller de lenguajes 1\Semana 8 Colecciones y arreglos\tl1-tp8-2025-Lucas526-jpg\ToDo\obj\Debug\net9.0\ToDo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Frx432\Desktop\Facultad\Taller de lenguajes 1\Semana 8 Colecciones y arreglos\tl1-tp8-2025-Lucas526-jpg\ToDo\obj\Debug\net9.0\ToDo.AssemblyInfoInputs.cache
+C:\Users\Frx432\Desktop\Facultad\Taller de lenguajes 1\Semana 8 Colecciones y arreglos\tl1-tp8-2025-Lucas526-jpg\ToDo\obj\Debug\net9.0\ToDo.AssemblyInfo.cs
+C:\Users\Frx432\Desktop\Facultad\Taller de lenguajes 1\Semana 8 Colecciones y arreglos\tl1-tp8-2025-Lucas526-jpg\ToDo\obj\Debug\net9.0\ToDo.csproj.CoreCompileInputs.cache
+C:\Users\Frx432\Desktop\Facultad\Taller de lenguajes 1\Semana 8 Colecciones y arreglos\tl1-tp8-2025-Lucas526-jpg\ToDo\obj\Debug\net9.0\ToDo.sourcelink.json
+C:\Users\Frx432\Desktop\Facultad\Taller de lenguajes 1\Semana 8 Colecciones y arreglos\tl1-tp8-2025-Lucas526-jpg\ToDo\obj\Debug\net9.0\ToDo.dll
+C:\Users\Frx432\Desktop\Facultad\Taller de lenguajes 1\Semana 8 Colecciones y arreglos\tl1-tp8-2025-Lucas526-jpg\ToDo\obj\Debug\net9.0\refint\ToDo.dll
+C:\Users\Frx432\Desktop\Facultad\Taller de lenguajes 1\Semana 8 Colecciones y arreglos\tl1-tp8-2025-Lucas526-jpg\ToDo\obj\Debug\net9.0\ToDo.pdb
+C:\Users\Frx432\Desktop\Facultad\Taller de lenguajes 1\Semana 8 Colecciones y arreglos\tl1-tp8-2025-Lucas526-jpg\ToDo\obj\Debug\net9.0\ToDo.genruntimeconfig.cache
+C:\Users\Frx432\Desktop\Facultad\Taller de lenguajes 1\Semana 8 Colecciones y arreglos\tl1-tp8-2025-Lucas526-jpg\ToDo\obj\Debug\net9.0\ref\ToDo.dll
