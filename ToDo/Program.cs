@@ -1,6 +1,8 @@
 ﻿// Program.cs
 using System;
-using ZonaTarea; // Para acceder a la clase Tarea y al namespace Funciones
+using System.Collections.Generic;
+using System.Linq;
+using ZonaTarea;
 
 class Program
 {
@@ -18,51 +20,81 @@ class Program
             {
                 _ddescripcion = "Finalizado";
             }
-            Tarea nuevaTarea = new Tarea(i, _ddescripcion, 15 + i);
-            tareasPendientes.Add(nuevaTarea); // Agrego la tarea al final de la lista
+            Tarea nuevaTarea = new Tarea(i, _ddescripcion + " Tarea " + i, 15 + i); // Añadimos algo más a la descripción
+            tareasPendientes.Add(nuevaTarea);
         }
-
-        // Muestro las tareas pendientes
-        Console.WriteLine("--- TAREAS PENDIENTES ---");
-        foreach (Tarea item in tareasPendientes)
+        bool bandera=true;
+        int opcionElegida;
+        do
         {
-            item.MostrarDetalles();
-        }
+            Funciones.consolaUsuario();
+            opcionElegida = Funciones.opcionElegida();
+            switch (opcionElegida)
+            {
+                case 1:
+                if (tareasPendientes.Count>0)
+                {
+                    // Muestro las tareas pendientes
+                    Console.WriteLine("--- TAREAS PENDIENTES ---");
+                    foreach (Tarea item in tareasPendientes)
+                    {
+                        item.MostrarDetalles();
+                    }
+                }
+                if (tareasRealizadas.Count>0)
+                {
+                    // Muestro las tareas pendientes
+                    Console.WriteLine("--- TAREAS REALIZADAS ---");
+                    foreach (Tarea item in tareasRealizadas)
+                    {
+                        item.MostrarDetalles();
+                    }
+                }
+                break;
 
-        // Muestro la cantidad de tareas pendientes
-        Console.WriteLine($"\nTotal de tareas Pendientes en la lista: {tareasPendientes.Count}");
-        Console.WriteLine($"Total de tareas Realizadas en la lista: {tareasRealizadas.Count}");
+                case 2:
+                    // Muestro las tareas pendientes
+                    Console.WriteLine("--- TAREAS REALIZADAS ---");
+                    foreach (Tarea item in tareasRealizadas)
+                    {
+                        item.MostrarDetalles();
+                    }
+                break;
 
-        // Muestro una consola para el usuario
-        Console.WriteLine("\n==========Consola==========");
-        Console.WriteLine("Ingrese el ID de la Tarea completada para moverla:");
-        string entradaUsuario = Console.ReadLine();
+                case 3:
+                    Console.WriteLine("\n==========Consola==========");
+                    Console.WriteLine("Ingrese el ID de la Tarea completada para moverla:");
+                    string entradaUsuario = Console.ReadLine();
 
-        if (int.TryParse(entradaUsuario, out int idTareaMover))
-        {
-            Console.WriteLine($"Intentando mover la tarea con ID: {idTareaMover}");
-            // ¡Aquí es donde usamos la nueva función!
-            Funciones.MoverTarea(tareasPendientes, tareasRealizadas, idTareaMover);
-        }
-        else
-        {
-            Console.WriteLine("El ID ingresado no es válido.");
-        }
+                    if (int.TryParse(entradaUsuario, out int idTareaMover))
+                    {
+                        Console.WriteLine($"Intentando mover la tarea con ID: {idTareaMover}");
+                        Funciones.MoverTarea(tareasPendientes, tareasRealizadas, idTareaMover);
+                    }
+                    else
+                    {
+                        Console.WriteLine("El ID ingresado no es válido.");
+                    }
+                break;
 
-        // Muestro la cantidad de tareas pendientes y realizadas después del movimiento
-        Console.WriteLine($"\nTotal de tareas Pendientes en la lista: {tareasPendientes.Count}");
-        Console.WriteLine($"Total de tareas Realizadas en la lista: {tareasRealizadas.Count}");
+                case 4:
+                    //buscar por descripcion
+                    Console.WriteLine("\n==========Buscador de Tareas==========");
+                    Console.WriteLine("Ingrese un texto para buscar en las descripciones de tareas pendientes:");
+                    string textoBusqueda = Console.ReadLine();
 
-        Console.WriteLine("\n--- TAREAS PENDIENTES ACTUALIZADAS ---");
-        foreach (Tarea item in tareasPendientes)
-        {
-            item.MostrarDetalles();
-        }
+                    // Llamamos a la nueva función para buscar y mostrar las tareas
+                    Funciones.BuscarTareasPorDescripcion(tareasPendientes, textoBusqueda);
+                break;
 
-        Console.WriteLine("\n--- TAREAS REALIZADAS ACTUALIZADAS ---");
-        foreach (Tarea item in tareasRealizadas)
-        {
-            item.MostrarDetalles();
-        }
+                case 5:
+                    bandera=false;
+                break;
+                
+                default:
+                    Console.WriteLine("Ingresa un numero valido");
+                break;
+            }
+        } while (bandera);
     }
 }
